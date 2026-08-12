@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificado SIMESA</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ddd;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #555;
+    }
+
+    .certificado {
+        width: 816px;
+        min-height: 1600px;
+        margin: 20px auto;
+        background: white;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    /* LOGO */
+
+    .logo {
+        padding-top: 15px;
+        font-size: 105px;
+        line-height: 1;
+        font-weight: 300;
+        letter-spacing: -8px;
+        color: #555;
+    }
+
+    .empresa {
+        font-size: 30px;
+        color: #222;
+        margin-top: 35px;
+    }
+
+    .espacio-superior {
+        height: 110px;
+    }
+
+    /* CAMPOS */
+
+    .campo {
+        padding: 13px 20px;
+    }
+
+    .campo.gris {
+        background: #eeeeee;
+        margin: 0 18px;
+    }
+
+    .titulo {
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .valor {
+        font-size: 26px;
+        font-weight: 300;
+        letter-spacing: .3px;
+    }
+
+    /* VERIFICACIÓN */
+
+    .verificacion {
+        margin-top: 35px;
+        padding: 0 17px;
+        text-align: left;
+    }
+
+    .verificacion-texto {
+        font-size: 25px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* FOTO */
+
+    .foto-contenedor {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        margin: 20px auto;
+        overflow: hidden;
+        border: 1px solid #777;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background:
+            radial-gradient(
+                circle,
+                #fff 55%,
+                #aaa 75%,
+                #fff 100%
+            );
+    }
+
+    .foto-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* IMPRESIÓN */
+
+    @media print {
+
+        body {
+            background: white;
+        }
+
+        .certificado {
+            margin: 0;
+            width: 100%;
+            box-shadow: none;
+        }
+
+        @page {
+            margin: 0;
+        }
+    }
+
+</style>
+</head>
+
+
+<body>
+
+<div class="certificado">
+
+    <!-- ENCABEZADO -->
+
+    <div class="logo">
+        SIMESA
+    </div>
+
+    <div class="empresa">
+        Personal Especializado de Alto Valor S.A de C.V
+    </div>
+
+    <div class="espacio-superior"></div>
+
+
+    <!-- CERTIFICADO -->
+
+    <div class="campo gris">
+        <div class="titulo">
+            NO. DE CERTIFICADO
+        </div>
+
+        <div class="valor">
+            OP-5197-26 / 047 / 230625-MX / 001
+        </div>
+    </div>
+
+
+    <!-- EMISIÓN -->
+
+    <div class="campo">
+
+        <div class="titulo">
+            EMISIÓN / ISSUE
+        </div>
+
+        <div class="valor">
+            11 AGOSTO 2026
+        </div>
+
+    </div>
+
+
+    <!-- EXPIRACIÓN -->
+
+    <div class="campo gris">
+
+        <div class="titulo">
+            EXPIRA / EXPIRATION
+        </div>
+
+        <div class="valor">
+            10 AGOSTO 2027
+        </div>
+
+    </div>
+
+
+    <!-- NOMBRE -->
+
+    <div class="campo">
+
+        <div class="titulo">
+            NOMBRE / NAME
+        </div>
+
+        <div class="valor">
+            JESUS IVAN IBARRA BALTAZAR
+        </div>
+
+    </div>
+
+
+    <!-- CURP -->
+
+    <div class="campo gris">
+
+        <div class="titulo">
+            CURP
+        </div>
+
+        <div class="valor">
+            IABJ0220220HJCBLSA0
+        </div>
+
+    </div>
+
+
+    <!-- PUESTO -->
+
+    <div class="campo">
+
+        <div class="titulo">
+            PUESTO / JOB
+        </div>
+
+        <div class="valor">
+            OPERADOR DE GRUA
+        </div>
+
+    </div>
+
+
+    <!-- DESIGNACIONES -->
+
+    <div class="campo gris">
+
+        <div class="titulo">
+            DESIGNACIONES / DESIGNATIONS
+        </div>
+
+        <div class="valor">
+            BTF, TSS, TLL, ABC
+        </div>
+
+    </div>
+
+
+    <!-- CAPACIDAD -->
+
+    <div class="campo">
+
+        <div class="titulo">
+            CAPACIDAD / CAPACITY
+        </div>
+
+        <div class="valor">
+            100 t
+        </div>
+
+    </div>
+
+
+    <!-- VERIFICACIÓN -->
+
+    <div class="verificacion">
+
+        <div class="verificacion-texto">
+            VERIFICACIÓN REALIZADA CORRECTAMENTE
+        </div>
+
+    </div>
+
+
+    <!-- FOTO -->
+
+    <div class="foto-contenedor">
+
+        <!-- Cambia foto.jpg por la fotografía real -->
+
+        <img src="foto.jpg" alt="Fotografía del operador">
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
